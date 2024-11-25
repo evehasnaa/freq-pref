@@ -1,0 +1,19 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+    long long n,sum=0,i=1;
+        while (cin>>n&& n!=0){
+         sum=n*(n+1)/2;
+          cout <<sum<<endl;
+          //sum=0;
+        }
+
+
+
+
+
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+    int  m,s;
+
+   cin>>s;
+   long long largest=INT_MIN,smallest=INT_MAX;
+    while (s--)
+    {
+        cin>>m;
+        if (m>largest)
+            largest=m;
+        if (m<smallest)
+            smallest=m;
+    }
+
+    cout <<"Maximum : "<<largest<<endl;
+    cout <<"Minimum : "<<smallest<<endl;
+
+    return 0;
+}

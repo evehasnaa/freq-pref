@@ -1,0 +1,76 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+
+   long long l,r;
+   cin>>l>>r;
+   int s;
+    cin>>s;
+   int c=0,o=0;
+   for  (int i=1;i<=s;i++)
+       {
+            long long n;
+           cin>>n;
+           if (n>=l && n<=r)
+                c++;
+           else
+                o++;
+   }
+   cout <<c<<" in"<<endl;
+   cout <<o<<" out"<<endl;
+
+   /*
+   int t;
+   cin>>t;
+
+   while (t--)
+    {
+        double x,y;
+        cin>>x>>y;
+        if (x>0&&y>0)
+            cout <<"Q1"<<endl;
+        else if (x>0&&y<0)
+            cout <<"Q4"<<endl;
+        else if (x<0&&y<0)
+            cout <<"Q3"<<endl;
+        else if (x<0&&y>0)
+            cout <<"Q2"<<endl;
+        else if (x==0&&y==0)
+            cout <<"Origem"<<endl;
+        else if (x!=0&&y==0)
+            cout <<"Eixo  X"<<endl;
+        else if (y!=0&&x==0)
+             cout <<"Eixo  Y"<<endl;
+
+    }
+*/ /*
+    int q;
+    cin>>q;
+    while (q--)
+    {
+
+
+    int n;
+    cin>>n;
+    bool isprime=true;
+    if (n<=1)
+        isprime=false;
+    for (int i=2;i<=sqrt(n);i++)
+    {
+        if (n%i==0)
+            {
+                isprime=false;
+                break;
+            }
+    }
+    if (isprime)
+        cout <<"YES"<<endl;
+    else
+        cout <<"NO"<<endl;
+    }
+    */
+    return 0;
+}

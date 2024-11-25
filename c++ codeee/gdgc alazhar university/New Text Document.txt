@@ -1,0 +1,56 @@
+#include iostream
+#includecmath
+using namespace std;
+
+int main()
+{   
+    long long n;
+    cinn;
+    bool ok=true;
+    if (n0&&n%13!=10)
+    {
+        cout NOendl;
+        return 0;
+    }
+    for (int i=2;i=sqrt(n);i++)
+    {
+        if (n%i==0)
+           {
+               ok=false;
+               break;
+           }
+    }
+    if (ok==true && n%13==0)
+        cout YESendl;
+    else
+        cout NOendl;
+        
+        int a,b,c ,m1=0,m2=0,m3=0;
+        cinabc;
+        int m=min(a,min(b,c));
+
+        if (a==m)
+           {
+             m1=a;
+             m2=min(b,c);
+             m3=max(b,c);
+
+           }
+        else if (b==m)
+            {
+                 m1=b;
+                 m2=min(a,c);
+                 m3=max(a,c);
+            }
+        else
+           {
+                m1=c;
+                 m2=min(a,b);
+                 m3=max(a,b);
+
+           }
+        cout m1 m2 m3 endl;
+
+
+    return 0;
+}

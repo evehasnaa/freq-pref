@@ -1,0 +1,33 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+    int  m,s,i=1;
+
+   cin>>s;
+   long long largest=INT_MIN,smallest=INT_MAX;
+   int pos_lar=1,pos_smal=1;
+    while (s--)
+    {
+        cin>>m;
+        if (m>largest)
+           {
+               largest=m;
+               pos_lar=i;
+           }
+        if (m<smallest)
+           {
+               smallest=m;
+               pos_smal=i;
+           }
+           i++;
+    }
+
+    cout <<"Position of Maximum : "<<pos_lar<<endl;
+    cout <<"Position of Minimum : "<<pos_smal<<endl;
+
+
+    return 0;
+}

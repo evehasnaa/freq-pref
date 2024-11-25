@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+ //cout <<(j%i!=0?"*":" ");
+int main()
+{
+//Inverted Half-Pyramid Using Numbers
+    int n,alpha='a';
+    cin>>n;
+        for (int i=1;i<=n;i++)
+    {
+        for (int j=1;j<=n-i;j++)
+        {
+             cout <<" ";
+        }
+            for (int k=1;k<=(2*i-1);k++)
+               {
+                   cout <<"*";
+               }
+               cout <<endl;
+    }
+    for (int i=n;i>=1;i--)
+        {
+    for (int s=1;s<=n-i;s++)
+        {
+             cout <<" ";
+        }
+    for (int k=i;k<=(2*i-1);k++)
+        {
+                     cout <<"*";
+        }
+    for (int j=0;j<i-1;j++)
+        {
+             cout <<"*";
+        }
+            /*
+            if (j>0)//add space stating with 1
+           cout <<" ";
+           cout<<"*";
+
+           //cout <<"*";
+            */
+
+            cout <<endl;
+}
+    return 0;
+}
